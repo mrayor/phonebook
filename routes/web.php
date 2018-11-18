@@ -12,4 +12,6 @@
 */
 
 Route::get('/', 'PagesController@home');
-Route::get('/{name}', 'PagesController@name')->where('name','[A-Za-z]+');
+Route::get('/phonebook/{name}', 'PagesController@name')->where('name','[A-Za-z]+');
+Route::resource('phonebook','PhonebookController');
+Route::post('getData','PhonebookController@getData');
