@@ -43,12 +43,15 @@ const routes = [
   ]
 
   const router = new VueRouter({
-    mode:'history',
+    // mode:'history',
     routes // short for `routes: routes`
   })
 
 const app = new Vue({
     el: '#app',
     router,
-    components:{Myheader,Myfooter}
+    components:{
+      Myheader,
+      Myfooter
+    }
 });
