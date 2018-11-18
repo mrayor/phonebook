@@ -91,6 +91,7 @@ export default {
          axios.delete(`/phonebook/${id}`).then((response)=> {this.lists.splice(key,1);this.loading = !this.loading})
           .catch((error)=>this.errors = error.response.data.errors)
       }
+      
 
 
 

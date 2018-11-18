@@ -48,6 +48,8 @@ class PhonebookController extends Controller
         $pb->email = $request->email;
         $pb->save();
 
+        return $pb;
+
     }
 
     /**
